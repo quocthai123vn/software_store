@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chỉnh sửa sản phẩm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if(curUser.role !== 'customer'){%>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <%}%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/history">Purchase History</a></li>
+        <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+        <li><a href="/recharge">Recharge</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+
+<div class="container">
+  <h2>Thay Đổi Ảnh Sản Phẩm</h2>
+  <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+  <%}%>
+  <form action="/editImage/<%=software.uid%>" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="image">Chọn ảnh sản phẩm</label>
+        <input type="file" class="form-control-file" name="image">
+      </div>
+    <button type="submit" class="btn btn-primary">Xác nhận</button>
+    <a class="btn btn-danger" href="/software/<%=software.uid%>">Hủy</a>
+  </form>
+  <br>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trang Chủ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if (curUser){ %>
+        <% if(curUser.role !== 'customer'){%>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <%}%>
+          <li><a href="/">Home</a></li>
+          <li><a href="/cart">Cart</a></li>
+          <li><a href="/history">Purchase History</a></li>
+          <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+          <li><a href="/recharge">Recharge</a></li>
+          <li><a href="/logout">Logout</a></li>
+      <%}else{%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      <%}%>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+<div class="container">
+  <form class="form-inline" method="POST" action="/">
+    <input class="form-control" placeholder="Nhập từ khóa cần tìm" id="search" name="search" value="<%=search%>">
+    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="sort">
+      <option value="0" selected>Sắp xếp</option>
+      <option value="2">Theo giá giảm</option>
+      <option value="3">Theo giá tăng</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+  </form><br>
+  <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+  <%}%> 
+  
+  <%if(softwares.length===0){%>
+    <h4>Không tìm thấy sản phẩm với từ khóa: <%=search%></h4>
+  <%}%>
+  <div id="home" class="row">
+    <% for(var i1=0,i2=softwares.length;i2>i1;i1++){%>
+      <div class="col-sm-3 item">
+        <div class="card">
+          <div class="card-head">
+            <img class="card-img-top" src="<%=softwares[i1].softwareImage%>" alt="Card image" style="width:100%">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title"><%=softwares[i1].softwareName%></h4>
+           
+          </div>
+          <div class="card-foot">
+            <p class="card-text">Giá: <%=aPrice[i1]%> vnđ</p>
+            <a href="/software/<%=softwares[i1].uid%>" class="btn btn-primary">Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+    <%}%>
+  </div>
+  
+  <ul class="pagination"></ul>
+</div>
+</body>
+</html>

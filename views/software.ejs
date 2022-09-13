@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%=software.softwareName%></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if (curUser){ %>
+        <% if(curUser.role !== 'customer'){%>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <%}%>
+          <li><a href="/">Home</a></li>
+          <li><a href="/cart">Cart</a></li>
+          <li><a href="/history">Purchase History</a></li>
+          <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+          <li><a href="/recharge">Recharge</a></li>
+          <li><a href="/logout">Logout</a></li>
+      <%}else{%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      <%}%>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+<div class="container">
+  <h1><%=software.softwareName%></h1><hr>
+  <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+  <%}%>
+  <% if (success!='') {%>
+    <div class="alert alert-success alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=success%>.</strong> 
+    </div>
+  <%}%>  
+  <div class="row">
+    <div class="col-sm-6">
+        <img class="card-img-top" src="/<%=software.softwareImage%>" alt="Card image" ><br>
+    </div>
+    
+
+    <div class="software col-sm-6">
+      <br>
+        <p><b>Giá:</b> <%=price%> vnđ</p>
+        <p><b>Nhà cung cấp:</b> <%=supplier.supplierName%></p>
+        
+
+        <form method="POST">
+          <label for="quantity"><b>Số lượng</b></label>
+          <input type="number" value="1" name="quantity" min="1" max="100"><br>
+          <button type="submit" class="btn btn-primary" id="addCart">Thêm vào giỏ hàng</button> 
+        </form>
+        
+    </div>
+
+    
+  </div>
+  <br>
+  <h3><b>Mô tả:</b></h3>
+  <p><%=software.description%></p><hr>
+
+  <h2>Bình luận</h2>    
+  <div class="comment">
+    <form action="/comment/<%=software.uid%>" method="post">
+      <textarea name="cmt" placeholder="Nhập nội dung bình luận"></textarea><br>
+      <button type="submit" class="btn btn-primary">Đăng</button> 
+    </form>
+  </div><br>
+  <div class="comment-box" id="home">
+    <% for(var i1=0, i2=cmt.length;i2>i1;i1++){ %>
+      <div class="media border p-3 item">
+        <img src="/<%=aUser[i1].avatar%>" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+          <h4><%=aUser[i1].ho%> <%=aUser[i1].ten%> <small><i>Đăng vào <%=date[i1]%></i></small></h4>
+          <p><%=cmt[i1].cmt%></p>
+        </div>
+
+        <% if(curUser){%>
+        <% if(curUser.uid === cmt[i1].by.toString()) {%>
+        <i class="fa fa-trash" onclick="onDeleteCmt(event)" data-id="<%=cmt[i1].uid%>" aria-hidden="true" style="color:red;"></i>
+        <%}%>
+        <%}%>
+      </div><br>
+    <%}%>
+
+  </div>
+  <ul class="pagination"></ul>
+  
+
+</div>
+
+<script type="text/javascript" src="../public/javascript/main.js" ></script>
+</body>
+</html>

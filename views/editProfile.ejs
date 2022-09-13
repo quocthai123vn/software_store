@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chỉnh sửa thông tin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if(curUser.role !== 'customer'){%>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <%}%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/history">Purchase History</a></li>
+        <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+        <li><a href="/recharge">Recharge</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+
+<div class="container">
+  <h2>Chỉnh Sửa Thông Tin</h2>
+    <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+    <%}%>
+  <form action="/editProfile" novalidate method="POST">
+    <div class="form-group">
+        <label for="lastName">Họ </label>
+        <input class="form-control" id="lastName" placeholder="Nhập họ" name="lastName" value="<%=curUser.ho%>">
+    </div>
+    <div class="form-group">
+        <label for="firstName">Tên </label>
+        <input class="form-control" id="firstName" placeholder="Nhập Tên" name="firstName" value="<%=curUser.ten%>">
+    </div>
+    <div class="form-group">
+        <label for="bankId">Tài khoản ngân hàng</label>
+        <input class="form-control" id="bankId" placeholder="Nhập tài khoản ngân hàng" name="bankId" value="<%=curUser.bankId%>">
+    </div>
+    <select class="custom-select" name="bankName">
+        <option value="" selected disabled hidden>Chọn ngân hàng</option>
+        <option value="Agribank">Agribank</option>
+        <option value="Vietcombank">Vietcombank</option>
+        <option value="ViettinBank">ViettinBank</option>
+    </select>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Xác nhận</button>
+  </form>
+  <br>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+[{
+  "_id": {
+    "$oid": "60a64033c5dc8700158d26a4"
+  },
+  "quantity": 0,
+  "uid": "1621508147601",
+  "softwareName": "Netflix Premium 1 User 1 month",
+  "price": 79000,
+  "description": "Shop sẽ gom 4 người vào sử dụng chung 1 tài khoản, mỗi người sẽ được cấp 1 user riêng trong tài khoản để sử dụng\r\nLưu ý chỉ sử dụng đúng user mang tiên mình và không được đổi pass trong quá trình sử dụng.\r\nHạn sử dụng 30 ngày tính từ khi mua hàng.\r\nCho phép 1 người sử dụng cùng một thời điểm\r\nĐăng nhập và xem phim tại: https://www.netflix.com/vn/login.\r\n* LƯU Ý: Khách hàng không thay đổi mật khẩu và thông tin thanh toán. Nếu thông tin bị thay đổi Divine Shop sẽ tiến hành reset và thu hồi tài khoản. ",
+  "softwareImage": "uploads/netflix_1_tháng.png",
+  "supplierId": "1621507965525",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a640dbc5dc8700158d26a6"
+  },
+  "quantity": 0,
+  "uid": "1621508315822",
+  "softwareName": "Youtube Premium (6 tháng)",
+  "price": 179000,
+  "description": "Video không có quảng cáo.\r\nYouTube Music Premium.\r\nXem miễn phí tất cả phim bộ và phim lẻ của YouTube Originals từ một số người sáng tạo thành công nhất của YouTube ngay khi họ phát hành.\r\nTải video xuống để xem khi không có mạng.\r\nPhát trong nền.",
+  "softwareImage": "uploads/youtube-pre-6-month.png",
+  "supplierId": "1621508225017",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64204c5dc8700158d26a8"
+  },
+  "quantity": 0,
+  "uid": "1621508612819",
+  "softwareName": "Spotify Premium (1 năm)",
+  "price": 590000,
+  "description": "Spotify là dịch vụ phát trực tiếp nhạc, podcast và video kỹ thuật số cho phép bạn truy cập hàng triệu bài hát và các nội dung khác từ các nghệ sĩ trên khắp thế giới.\r\nCác chức năng cơ bản như phát nhạc hoàn toàn miễn phí, nhưng bạn cũng có thể chọn nâng cấp lên Spotify Premium. ",
+  "softwareImage": "uploads/Spotify_Gói gia hạn 12 tháng.png",
+  "supplierId": "1621508393494",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a646b9c5dc8700158d26aa"
+  },
+  "quantity": 0,
+  "uid": "1621509817496",
+  "softwareName": "Tài khoản Adobe Acrobat Pro ( 1 năm )",
+  "price": 199000,
+  "description": "Phần mềm Adobe Acrobat bản quyền đem đến người dùng nhiều hơn chỉ là một trình đọc PDF. Nó chứa đựng các tính năng nâng cao cho phép người dùng, doanh nghiệp tận dụng tối đa loại tệp PDF :\r\n ∙ Mở và xem PDF sử dụng tính năng ghi chú để áp dụng ghi chú cho các phần khác nhau của PDF.\r\n ∙ Đặt văn bản trực tiếp trên PDF với máy tính bảng hoặc bút stylis cũng cho thêm sự liên tục.\r\n ∙ Đối với bảo mật Adobe cung cấp cho bạn optins cho việc áp dụng chữ ký để đảm bảo rằng copywriting là không thể cũng như thêm mã hóa.\r\nNhững tính năng chính của Adobe Acrobat:\r\n ∙ Tự tạo file PDF bằng cách mở bất kì định dạng văn bản\r\n ∙ Chỉnh sửa file PDF\r\n ∙ Scan văn bản giấy sang PDF\r\n ∙ Chuyển đổi file PDF sang các định dạng khác nhau\r\n ∙ Chia sẻ các file bằng cách sử dụng SendNow trực tuyến hoặc qua Email\r\n ∙ Scan văn bản giấy sang PDF\r\n ∙ Khả năng mở nhiều cửa sổ và nhiều dự án đang chạy cùng một lúc\r\n ∙ Tạo chú thích, chữ ký, bookmark cho văn bản PDF\r\n ∙ Bảo vệ tập tin PDF\r\n ∙ Giao diện thân thiện, điều hướng người dùng\r\n ∙ Hỗ trợ đa ngôn ngữ",
+  "softwareImage": "uploads/Adobe_system_Acrobat_Pro_1nam.png",
+  "supplierId": "1621509664060",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64733c5dc8700158d26ac"
+  },
+  "quantity": 0,
+  "uid": "1621509939391",
+  "softwareName": "Tài khoản học ngoại ngữ Busuu Premium 1 năm",
+  "price": 150000,
+  "description": "Busuu là mạng xã hội học ngôn ngữ lớn nhất thế giới, cung cấp 12 khóa học ngôn ngữ khác nhau trên trang web và điện thoại di động cho hơn 100 triệu học viên trên toàn cầu. Học viên có thể đăng ký miễn phí hoặc đăng ký quyền thành viên Premium để mở khóa những tính năng cao cấp như bài học ngữ pháp, Chế độ ngoại tuyến, chứng chỉ ngôn ngữ McGraw-Hill Education hoặc Bộ luyện từ vựng thích ứng của chúng tôi.",
+  "softwareImage": "uploads/1year_busu_premium.png",
+  "supplierId": "1621509897695",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a6479ec5dc8700158d26ae"
+  },
+  "quantity": 0,
+  "uid": "1621510046443",
+  "softwareName": "Key bản quyền diệt virus Malwarebytes vv",
+  "price": 450000,
+  "description": "Malwarebytes Premium (Malwarebytes Anti-Malware Premium) là phần mềm cung cấp cho bạn các giải pháp để bảo vệ máy tính toàn diện trước sự tấn công của phần mềm độc hại, mã độc, malware, trojan, rootkit,…\r\n\r\nMalwarebytes Anti-Malware Premium là một phần mềm nổi tiếng của hãng Malwarebytes được rất nhiều người dùng cá nhân cài đặt và sử dụng. Nếu các phần mềm diệt virus như Avast hay Advanced SystemCare Ultimate chỉ tập trung quét và diệt virus thì Malwarebytes Premium sẻ bảo vệ máy tính của bạn toàn diện trước trojan, rootkit, các ứng dụng lừa đảo, phần mềm gián điệp và nhiều phần mềm độc hại khác.",
+  "softwareImage": "uploads/Malwarebytes.png",
+  "supplierId": "1621509987333",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a6484ac5dc8700158d26af"
+  },
+  "quantity": 0,
+  "uid": "1621510218393",
+  "softwareName": "Tài khoản Adobe Premier Rush ( 1 năm )",
+  "price": 199000,
+  "description": "Adobe Premiere Rush CC là công cụ chỉnh sửa video đa nền tảng kết hợp những yếu tố của Premiere Pro, Audition và After Effects.\r\n\r\n∙ Được Adobe thử nghiệm từ đầu năm nay dưới tên gọi \"Project Rush\", mục đích của Premiere Rush CC là mang đến công cụ biên tập video có thể sử dụng mọi lúc mọi nơi trên mọi thiết bị với tính năng \"Pick up where you left off\", đồng bộ dữ liệu biên tập lên mây giúp bạn tiếp tục công việc trên thiết bị khác. Nếu đang chỉnh sửa dở dang trên máy tính và bất ngờ phải ra ngoài, bạn có thể tiếp tục chỉnh sửa nó trên điện thoại hay tablet.",
+  "softwareImage": "uploads/ADOBE_PREMIER_RUSH.png",
+  "supplierId": "1621509664060",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64a27c5dc8700158d26b2"
+  },
+  "quantity": 0,
+  "uid": "1621510695550",
+  "softwareName": "Tài khoản Doodly Rainbow + Enterprise",
+  "price": 17900000,
+  "description": "Doodly là một phần mềm làm video hoạt hình được nhiệt liệt đề cử cho những người chưa có kinh nghiệm. Doodly đưa ra 4 phong cách video khác nhau để bạn chọn lựa: phong cách bảng trắng (whiteboard), bảng đen (blackboard), bảng xanh (greenboard) và bảng kính (glassboard).",
+  "softwareImage": "uploads/doodly.jpg",
+  "__v": 0,
+  "supplierId": "1621510381681"
+},{
+  "_id": {
+    "$oid": "60a64a9ec5dc8700158d26b3"
+  },
+  "quantity": 0,
+  "uid": "1621510814107",
+  "softwareName": "Code gia hạn Adobe Full App (1 tháng)",
+  "price": 450000,
+  "description": "Khi các bạn kích hoạt Adobe Creative Cloud 2020 các bạn sẽ được sử dụng đầy đủ ứng dụng của Adobe như:\r\n\r\n   * Adobe Photoshop CC 2020: Phần mềm giúp chỉnh sửa ảnh rất nổi tiếng, không thể thay thế hiện nay.\r\n\r\n   * Adobe Illustrator CC 2020: Phần mềm AI là phần mềm nổi tiếng giúp dàn trang. Brochure, logo, thiết kế in ấn…rất nổi tiếng.\r\n\r\n   * Adobe InDesign – dàn trang tạp chí, cái này thì quá nổi tiếng rồi.\r\n\r\n   * Adobe XD – giúp anh em phát triển UX/ UI.\r\n\r\n   * Adobe Dreamweaver – Thiết kế và lập trình website chuyên nghiệp.\r\n\r\n   * Adobe Premiere Pro – Ứng dụng dựng phim quá chuyên nghiệp.\r\n\r\n   * Adobe After Effects – Phần mềm giúp tạo kỹ xào.\r\n\r\n   * Adobe Audition – Giúp chỉnh sửa audio âm thanh.\r\n\r\n   * Adobe Lightroom: Phần mềm chỉnh sửa ảnh nổi tiếng.\r\n\r\n   * Và nhiều ứng dụng khác các bạn có thể xem thêm tại trang chủ của nó: https://www.adobe.com/sea/",
+  "softwareImage": "uploads/adobe_full_ap.jpg",
+  "supplierId": "1621509664060",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64be2c5dc8700158d26b5"
+  },
+  "quantity": 0,
+  "uid": "1621511138602",
+  "softwareName": "Tài khoản Adobe Photography ( 1 năm )",
+  "price": 399000,
+  "description": "Adobe Photoshop là phần mềm đồ họa có tác dụng chỉnh sửa ảnh. Phần mềm được sáng tạo và phát hành bởi Adobe – một trong nhiều tên tuổi hàng đầu trong các phần mềm thiết kế hiện nay. Ngay từ khi ra mắt, Adobe Photoshop đã nhận được nhiều sự quan tâm của khách hàng và nhanh chóng chiếm được cảm tình của những người thiết kế, nhiếp ảnh gia khó tính nhất.",
+  "softwareImage": "uploads/Adobe Photography.png",
+  "supplierId": "1621509664060",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64e45c5dc8700158d26b6"
+  },
+  "quantity": 0,
+  "uid": "1621511749507",
+  "softwareName": "Tài khoản Adobe Combo ( 1 năm )",
+  "price": 749000,
+  "description": "Gói nâng cấp này bao gồm: Adobe Photography, Adobe Premier Rush, Adobe Acrobat Pro, Adobe Fresco.",
+  "softwareImage": "uploads/Combo_Adobe.png",
+  "supplierId": "1621509664060",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64e7fc5dc8700158d26b7"
+  },
+  "quantity": 0,
+  "uid": "1621511807243",
+  "softwareName": "Tài khoản Adobe Fresco ( 1 năm )",
+  "price": 199000,
+  "description": "Adobe Fresco – ứng dụng vẽ chuyên nghiệp trên Windows và iPadOS được thiết kế dành riêng cho bút stylus và thiết bị có màn hình cảm ứng.",
+  "softwareImage": "uploads/ADobe Freshco.png",
+  "supplierId": "1621509664060",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64faec5dc8700158d26b9"
+  },
+  "quantity": 0,
+  "uid": "1621512110031",
+  "softwareName": "Steam Wallet Code 118k VNĐ ( >5$ )",
+  "price": 127000,
+  "description": "Steam Wallet Code là dạng mã thẻ Steam Wallet dưới dạng code online dùng để nạp tiền mua game Steam hoặc mua đồ trong game online như DOTA 2, CSGO. Cũng giống như kiểu nạp thẻ điện thoại mà chỉ cần nạp mã thẻ cào thôi ấy mà, khỏi cần phải mua thẻ giấy mà vẫn được nạp tiền một cách nhanh chóng tiện lợi. ",
+  "softwareImage": "uploads/steam_code_118k.png",
+  "supplierId": "1621512021385",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64ff7c5dc8700158d26ba"
+  },
+  "quantity": 0,
+  "uid": "1621512183847",
+  "softwareName": "Steam Wallet Code ~162,000 VNĐ",
+  "price": 180000,
+  "description": "Steam Wallet Code là dạng mã thẻ Steam Wallet dưới dạng code online dùng để nạp tiền mua game Steam hoặc mua đồ trong game online như DOTA 2, CSGO. Cũng giống như kiểu nạp thẻ điện thoại mà chỉ cần nạp mã thẻ cào thôi ấy mà, khỏi cần phải mua thẻ giấy mà vẫn được nạp tiền một cách nhanh chóng tiện lợi. ",
+  "softwareImage": "uploads/steam_code_162k.png",
+  "supplierId": "1621512021385",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a6505ec5dc8700158d26bb"
+  },
+  "quantity": 0,
+  "uid": "1621512286135",
+  "softwareName": "Steam Wallet Code ~356,000 VNĐ",
+  "price": 375000,
+  "description": "Steam Wallet Code là dạng mã thẻ Steam Wallet dưới dạng code online dùng để nạp tiền mua game Steam hoặc mua đồ trong game online như DOTA 2, CSGO. Cũng giống như kiểu nạp thẻ điện thoại mà chỉ cần nạp mã thẻ cào thôi ấy mà, khỏi cần phải mua thẻ giấy mà vẫn được nạp tiền một cách nhanh chóng tiện lợi. ",
+  "softwareImage": "uploads/steam_code_356k.png",
+  "supplierId": "1621512021385",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a65092c5dc8700158d26bc"
+  },
+  "quantity": 0,
+  "uid": "1621512338038",
+  "softwareName": "Steam Wallet Code ~445,000 VNĐ",
+  "price": 472000,
+  "description": "Steam Wallet Code là dạng mã thẻ Steam Wallet dưới dạng code online dùng để nạp tiền mua game Steam hoặc mua đồ trong game online như DOTA 2, CSGO. Cũng giống như kiểu nạp thẻ điện thoại mà chỉ cần nạp mã thẻ cào thôi ấy mà, khỏi cần phải mua thẻ giấy mà vẫn được nạp tiền một cách nhanh chóng tiện lợi. ",
+  "softwareImage": "uploads/steam_code_445k.png",
+  "supplierId": "1621512021385",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a6513ec5dc8700158d26be"
+  },
+  "quantity": 0,
+  "uid": "1621512510667",
+  "softwareName": "Discord Nitro 1 Tháng",
+  "price": 199000,
+  "description": "TÀI KHOẢN DISCORD NITRO CÓ HẠN SỬ DỤNG MỘT THÁNG VỚI NHỮNG ƯU ĐÃI ĐẶC BIỆT",
+  "softwareImage": "uploads/discordnitro1month.png",
+  "supplierId": "1621512438564",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a65193c5dc8700158d26bf"
+  },
+  "quantity": 0,
+  "uid": "1621512595442",
+  "softwareName": "Discord Bot - Controls",
+  "price": 29000,
+  "description": "Sản phẩm có thể hỗ trợ tạo BOT Discord của riêng bạn. Giao diện sử dụng dễ dàng,hiện đại",
+  "softwareImage": "uploads/discord_controls.jpg",
+  "supplierId": "1621512438564",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a65203c5dc8700158d26c1"
+  },
+  "quantity": 0,
+  "uid": "1621512707339",
+  "softwareName": "Discord Bot - Studio",
+  "price": 168000,
+  "description": "Discord Bot Studio là một công cụ giúp bạn tạo ra một Discord bot của chính bản thân mình, mà không phải code một dòng nào cả!",
+  "softwareImage": "uploads/discord_bot_Studio.jpg",
+  "supplierId": "1621512438564",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a65569c5dc8700158d26c3"
+  },
+  "quantity": 0,
+  "uid": "1621513577061",
+  "softwareName": "Battlefield 1",
+  "price": 330000,
+  "description": "Battlefield 1 (còn được gọi là Chiến trường 1 hay Chiến trường rực lửa 1) là tựa game bắn súng góc nhìn thứ nhất được phát triển bởi EA DICE và được phát hành bởi Electronic Arts. Battlefield 1 là phần thứ mười lăm trong loạt Battlefield.",
+  "softwareImage": "uploads/battlefield1.png",
+  "supplierId": "1621513457697",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a655f7c5dc8700158d26c4"
+  },
+  "quantity": 0,
+  "uid": "1621513719024",
+  "softwareName": "Battlefield 3",
+  "price": 300000,
+  "description": "Battlefield 3 bao gồm cả chiến dịch chơi đơn và hợp tác và có tính năng chơi nhiều người chơi tương tự như Battlefield 2 cổ điển. Các máy bay phản lực đã trở lại như một phương tiện thí điểm, cùng với đó là một lập trường sẵn có. Phiên bản PC có thể hỗ trợ 64 người chơi cùng lúc trong nhiều người chơi; bảng điều khiển, tuy nhiên, chỉ có thể hỗ trợ tối đa 24 người chơi, dẫn đến bản đồ nhỏ hơn. [8] Phần này sử dụng một công cụ hoàn toàn mới, được đặt tên là Frostbite 2, kế thừa của Công cụ Frostbite được sử dụng trong loạt Công ty xấu.",
+  "softwareImage": "uploads/Battlefield3.png",
+  "supplierId": "1621513457697",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a65634c5dc8700158d26c5"
+  },
+  "quantity": 2,
+  "uid": "1621513780490",
+  "softwareName": "Battlefield 4",
+  "price": 300000,
+  "description": "Với Engine đồ họa Frostbite, Battlefield 4 sẽ khoác lên mình một lớp áo hào nhoáng với những hiệu ứng vật lí như va chạm, cháy nổ cũng như hình ảnh chân thực. Sẽ có những điểm mới lạ như thủy quân hay những nhân vật nữ. Multiplayer rất hoành tráng, quy mô và hấp dẫn hơn bao giờ hết.",
+  "softwareImage": "uploads/Battlefield4.png",
+  "supplierId": "1621513457697",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a656a9c5dc8700158d26c6"
+  },
+  "quantity": 3,
+  "uid": "1621513897314",
+  "softwareName": "Crysis 3",
+  "price": 500000,
+  "description": "Crysis 3 là một game bắn súng góc nhìn thứ nhất được Crytek phát triển và Electronic Arts phát hành cho Microsoft Windows, PlayStation 3 và Xbox 360 vào năm 2013. Đây là phần chính thứ ba của dòng game Crysis, phần tiếp theo của Crysis 2 năm 2011. Phần chơi mạng của game được phát triển bởi Crytek UK. Câu chuyện của Crysis 3 xoay quanh Prophet, một người nắm giữ Nanosuit đang thực hiện nhiệm vụ trả thù Alpha Ceph, thủ lĩnh của tộc người ngoài hành tinh Ceph. Câu chuyện của game đóng vai trò là sự kết thúc của bộ ba Crysis. Lối chơi xoay quanh việc sử dụng Nanosuit, nơi cung cấp cho người chơi nhiều khả năng khác nhau như vô hình. Các tính năng mới được giới thiệu trong Crysis 3 bao gồm một khả năng Nanosuit mới có tên là \"Rip & Throw\", loại cung phức hợp và tính năng \"hacking\", cho phép người chơi hack vào thiết bị, máy bay không người lái và tuyến phòng thủ an ninh của kẻ địch.",
+  "softwareImage": "uploads/Crysis3.png",
+  "supplierId": "1621513457697",
+  "__v": 0
+}]

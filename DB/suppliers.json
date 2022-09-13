@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "60a60b4ca295571c08af073b"
+  },
+  "uid": "1621494604805",
+  "supplierName": "Fpt Software",
+  "supplierEmail": "fpt@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a63f7dc5dc8700158d26a3"
+  },
+  "uid": "1621507965525",
+  "supplierName": "Netflix",
+  "supplierEmail": "netflix@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64081c5dc8700158d26a5"
+  },
+  "uid": "1621508225017",
+  "supplierName": "Youtube",
+  "supplierEmail": "youtube@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64129c5dc8700158d26a7"
+  },
+  "uid": "1621508393494",
+  "supplierName": "Spotify",
+  "supplierEmail": "spotify@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64620c5dc8700158d26a9"
+  },
+  "uid": "1621509664060",
+  "supplierName": "Adobe Systems",
+  "supplierEmail": "adobesystem@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64709c5dc8700158d26ab"
+  },
+  "uid": "1621509897695",
+  "supplierName": "Busuu",
+  "supplierEmail": "busuu@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64763c5dc8700158d26ad"
+  },
+  "uid": "1621509987333",
+  "supplierName": "Malwarebytes",
+  "supplierEmail": "malwarebytes@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a648edc5dc8700158d26b0"
+  },
+  "uid": "1621510381681",
+  "supplierName": "Doodly",
+  "supplierEmail": "doodly@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a64f55c5dc8700158d26b8"
+  },
+  "uid": "1621512021385",
+  "supplierName": "Steam",
+  "supplierEmail": "steam@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a650f6c5dc8700158d26bd"
+  },
+  "uid": "1621512438564",
+  "supplierName": "Discord",
+  "supplierEmail": "discord@gmail.com",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60a654f1c5dc8700158d26c2"
+  },
+  "uid": "1621513457697",
+  "supplierName": "Origin",
+  "supplierEmail": "origin@gmail.com",
+  "__v": 0
+}]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thêm nhà cung cấp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if(curUser.role !== 'customer'){%>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <%}%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/history">Purchase History</a></li>
+        <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+        <li><a href="/recharge">Recharge</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+
+<div class="container">
+  <h2>Thêm Nhà Cung Cấp</h2>
+  <form action="/addSupplier" novalidate method="POST">
+    <div class="form-group">
+      <div class="form-group">
+        <label for="name">Tên nhà cung cấp</label>
+        <input class="form-control" id="lastName" placeholder="Nhập tên nhà cung cấp" name="name">
+    </div>
+      <label for="email">Email nhà cung cấp</label>
+      <input type="email" class="form-control" id="email" placeholder="Nhập email nhà cung cấp" name="email">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Thêm nhà cung cấp</button>
+  </form><br>
+  <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+  <%}%>
+  <br>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Đăng Ký</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav><br>
+
+<div class="container">
+  <h2>Đăng Ký</h2>
+    <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+    <%}%>
+  <form action="/register" novalidate method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="email">Email </label>
+      <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email" value="<%=email%>">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Họ </label>
+        <input class="form-control" id="lastName" placeholder="Nhập họ" name="lastName" value="<%=lastName%>">
+    </div>
+    <div class="form-group">
+        <label for="firstName">Tên </label>
+        <input class="form-control" id="firstName" placeholder="Nhập Tên" name="firstName" value="<%=firstName%>">
+    </div>
+    <div class="form-group">
+        <label for="avatar">Chọn ảnh đại diện</label>
+        <input type="file" class="form-control-file" name="avatar">
+    </div>
+    <div class="form-group row">
+        <label for="example-date-input" class="col-2 col-form-label">Ngày sinh</label>
+        <div class="col-10">
+          <input class="form-control" type="date" name="ngaysinh" value="2000-01-01">
+        </div>
+      </div>
+    <div class="form-group">
+        <label for="bankId">Tài khoản ngân hàng</label>
+        <input class="form-control" id="bankId" placeholder="Nhập tài khoản ngân hàng" name="bankId">
+    </div>
+    <select class="custom-select" name="bankName">
+        <option value="" selected disabled hidden>Chọn ngân hàng</option>
+        <option value="Agribank">Agribank</option>
+        <option value="Vietcombank">Vietcombank</option>
+        <option value="ViettinBank">ViettinBank</option>
+    </select>
+    <br><br>
+    <div class="form-group">
+      <label for="password">Mật khẩu</label>
+      <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" name="password">
+    </div>
+    <div class="form-group">
+        <label for="rePassword">Xác nhận mật khẩu</label>
+        <input type="password" class="form-control" id="re-password" placeholder="Nhập xác nhận mật khẩu" name="rePassword">
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng Ký</button>
+  </form>
+  <br>
+  
+</div>
+
+</body>
+</html>

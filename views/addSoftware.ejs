@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thêm sản phẩm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if(curUser.role !== 'customer'){%>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <%}%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/history">Purchase History</a></li>
+        <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+        <li><a href="/recharge">Recharge</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+
+<div class="container">
+  <h2>Thêm Sản Phẩm</h2>
+  <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+  <%}%>
+  <form action="/addSoftware" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="name">Tên sản phẩm</label>
+      <input class="form-control" placeholder="Nhập tên sản phẩm" name="name" value="<%=name%>">
+    </div>
+    <div class="form-group">
+        <label for="price">Giá sản phẩm</label>
+        <input class="form-control" placeholder="Nhập giá sản phẩm" name="price" value="<%=price%>">
+    </div>
+    <div class="form-group">
+      <label for="supplier">Chọn nhà cung cấp</label>
+      <select class="custom-select" name="supplier">
+        <option value="" selected disabled hidden>Nhà cung cấp</option>
+        <% sups.forEach(s => {%>
+        <option value="<%=s.uid%>"><%=s.supplierName%></option>
+        <%})%>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="supplier">Chọn ảnh sản phẩm</label>
+      <input type="file" class="form-control-file" name="image">
+    </div>
+    <div class="comment form-group">
+      <label for="description">Mô tả:</label>
+      <textarea class="form-control" name="description"><%=desc%></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+  </form>
+  <br>
+  
+</div>
+
+</body>
+</html>

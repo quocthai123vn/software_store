@@ -1,0 +1,144 @@
+nav{
+    height: 80px;
+    width: 100%;
+    background: #343a40;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.active{
+    z-index: 1;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: 1px solid red transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,a:hover{
+    transition:.5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right; 
+    margin-right: 15px;
+    margin-top: 10px;
+    cursor: pointer; 
+    display: none;
+}
+
+.card{
+    width: 100%;
+    height: 98%;
+}
+
+.row{
+    width: 100%;
+}
+
+#search{
+    margin-left: 35%;
+    width: 300px;
+}
+
+.software h1{
+    text-transform: uppercase;
+}
+
+.software p{
+    font-size: 20px;
+}
+
+.comment textarea{
+    resize: none;
+    height: 100px;
+    width: 80%;
+}
+
+
+.money{
+    float: right;
+}
+
+.card-img-top{
+    width: 60%;
+}
+
+.card-foot{
+    margin: 10px;
+}
+
+
+
+@media(max-width:1024px){
+    nav ul{
+        margin-right: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:768px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #22262a;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+
+    a.active,a:hover{
+        border: none;
+        color: #3498db;
+    }
+
+    nav ul.show{
+        left:0;
+        padding: 0;
+    }
+    #search{
+        margin-left: 0%;
+    }
+
+    .table td{
+        padding: 0.5px;
+    }
+}

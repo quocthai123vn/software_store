@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%=profile.supplierName%></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <% if(curUser.role !== 'customer'){%>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <%}%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/history">Purchase History</a></li>
+        <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+        <li><a href="/recharge">Recharge</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+<div class="container">
+<h1>Thông Tin Nhà Cung Cấp</h1><hr>
+  <div class="row">
+
+    <div class="software col-sm-6">
+        <p><b>Nhà cung cấp:</b> <%=profile.supplierName%></p>
+        <p><b>Email nhà cung cấp:</b> <%=profile.supplierEmail%></p>
+    </div> 
+
+    <div class="col-sm-6">
+        <h2>Phần Mềm Đã Cung Cấp</h2>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Tên sản phẩm</th>
+              <th>Giá</th>
+            </tr>
+          </thead>
+          <tbody>
+      
+            <% softwares.forEach(s=>{ %>
+              <tr>
+                <td><%=s.softwareName%></td>
+                <td><%=s.price%></td>
+              </tr>
+            <%})%>
+                
+          </tbody>
+        </table>
+        <% if(softwares.length===0){%>
+          <p>Không có sản phẩm để hiển thị</p>
+        <%}%>
+      
+    </div>
+
+  </div>
+  
+</div>
+
+</body>
+</html>

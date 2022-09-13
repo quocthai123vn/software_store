@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quản lí phần mềm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../public/javascript/main.js" ></script>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <% if(curUser.role !== 'customer'){%>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <%}%>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/history">Purchase History</a></li>
+        <li><a href="/profile/<%=curUser.uid%>">Profile</a></li>
+        <li><a href="/recharge">Recharge</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+    <label id="icon">
+        <i class="fa fa-bars"></i>
+    </label>
+</nav><br>
+
+<div class="container">
+  <h2>Danh Sách Sản Phẩm</h2>
+  <a class="btn btn-success" href="/addSoftware">Thêm sản phẩm</a> <br><br> 
+  <form class="form-inline" method="POST" action="/softwareManager">
+    <input class="form-control" placeholder="Nhập từ khóa cần tìm" id="search" name="search" value="<%=search%>">
+    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="sort">
+      <option value="0" selected>Sắp xếp</option>
+      <option value="1">Theo tên từ A-Z</option>
+      <option value="2">Theo giá giảm</option>
+      <option value="3">Theo giá tăng</option>
+      <option value="4">Theo số lượng bán giảm</option>
+      <option value="5">Theo số lượng bán tăng</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+  </form>
+  <h4>Tổng số sản phẩm: <%=softwares.length%></h4>  
+  <% if (error!='') {%>
+    <div class="alert alert-danger alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=error%>.</strong> 
+    </div>
+  <%}%> 
+  <% if (success!='') {%>
+    <div class="alert alert-success alert-dismissible fade show">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong><%=success%>.</strong> 
+    </div>
+  <%}%>       
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+        <th>Số lượng đã bán</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <% for(var i1=0,i2=softwares.length;i2>i1;i1++){ %>
+        <tr>
+          <td><%=softwares[i1].softwareName%></td>
+          <td><%=aPrice[i1]%></td>
+          <td><%=softwares[i1].quantity%></td>
+          <td>
+            <a class="btn btn-success" href="/software/<%=softwares[i1].uid%>">Xem chi tiết</a>
+            <a class="btn btn-primary" href="/editSoftware/<%=softwares[i1].uid%>">Sửa sản phẩm</a>
+            <a data-id="<%=softwares[i1].uid%>" type="button" class="softwareDeleteBtn btn btn-danger">Xóa</a>
+          </td>
+        </tr>
+      <%}%>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- The Modal -->
+<div id="confirm-delete-dialog" class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Thông Báo</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        Xác nhận xóa sản phẩm
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <a id="btn-delete-confirm" class="btn btn-success">Xác nhận</a>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
